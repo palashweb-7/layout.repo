@@ -1,0 +1,35 @@
+.header, .nav, .main, .advertise, .sidebar, .footer{
+    background-color: antiquewhite;
+    border: 2px solid magenta;
+    border-radius: 10px;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+
+}
+.main{
+    grid-area: main;
+}
+.advertise{
+    grid-area: advertise;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.footer{
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header header"
+    "nav    main   main   sidebar"
+    "nav    main   main   advertise"
+    "footer footer footer footer"
+    ;
+}
